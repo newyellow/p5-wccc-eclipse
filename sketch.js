@@ -1,3 +1,12 @@
+// WCCChallenge topci "Eclipse"
+//
+// I enjoyed making this "Giant in the Forest" concept this week
+// Although it seems not very successful since the giant is not very clear
+//
+// Here are some better generated results from my IG:
+// (the first one is a video)
+// https://www.instagram.com/p/C5pyXFgvc79/
+
 let globalFogNoise;
 let GLOBAL_NOW_FOG_Z = 0;
 let GLOBAL_FOG_Z_ADD_AMOUNT = 10;
@@ -22,7 +31,6 @@ async function setup() {
   flex();
   colorMode(HSB);
   pixelDensity(1);
-  // pixelDensity(2);
 
   background(240, 30, 10);
 
@@ -111,11 +119,6 @@ async function setup() {
       });
     }
   }
-
-  await sleep(6000);
-  save(`giant-${$fx.hash}.png`);
-  await sleep(6000);
-  window.location.reload();
 }
 
 async function drawGiant(_x) {
