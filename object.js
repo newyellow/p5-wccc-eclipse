@@ -201,7 +201,7 @@ class TreeNode {
 
             // noStroke();
             // fill('black');
-            let nowFogAlpha = lerp(-0.6, 1.2, globalFogNoise.getNoise(this.x, this.y, GLOBAL_NOW_FOG_Z));
+            let nowFogAlpha = lerp(-0.4, 1.2, globalFogNoise.getNoise(this.x, this.y, GLOBAL_NOW_FOG_Z));
 
             let xDistToCenter = abs(this.x - width * 0.5);
             let yDistToCenter = abs(this.y - height * 0.5);
@@ -225,7 +225,7 @@ class TreeNode {
             let nowLightColor = this.options.lightContourColor;
             nowLightColor.a = nowFogAlpha;
             stroke(nowLightColor.color());
-            let lightBrushSize = nowWidth * 0.2;
+            let lightBrushSize = nowWidth * 0.24;
             strokeBrush(0 + 0.3 * nowWidth, 0, lightBrushSize, 0.2);
             pop();
         }
